@@ -1,0 +1,1263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: Файл main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('main_8cpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Файл main.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cctype&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;windows.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:BruteForceResult" id="r_BruteForceResult"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_brute_force_result.html">BruteForceResult</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Результат полного перебора перестановок для одной длины ключа.  <a href="struct_brute_force_result.html#details">Подробнее...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a0c4eaf894b5d85ae547c79e142cc3d5b" id="r_a0c4eaf894b5d85ae547c79e142cc3d5b"><td class="memItemLeft">vector&lt; vector&lt; char &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a0c4eaf894b5d85ae547c79e142cc3d5b">get_matrix_for_bifid_cipher</a> (string key)</td></tr>
+<tr class="memdesc:a0c4eaf894b5d85ae547c79e142cc3d5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Строит координатную матрицу 6x6 (полибианский квадрат) для шифра Бифида.  <br /></td></tr>
+<tr class="memitem:a1497fbbdb70e71e7f358408204ae0c9c" id="r_a1497fbbdb70e71e7f358408204ae0c9c"><td class="memItemLeft">vector&lt; vector&lt; char &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a1497fbbdb70e71e7f358408204ae0c9c">bifid_cipher_step1</a> (string text, string key)</td></tr>
+<tr class="memdesc:a1497fbbdb70e71e7f358408204ae0c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шаг 1 шифра Бифида: замена каждого символа текста парой его координат в матрице.  <br /></td></tr>
+<tr class="memitem:ad27976189cba62f60b73fd9845c1c208" id="r_ad27976189cba62f60b73fd9845c1c208"><td class="memItemLeft">vector&lt; string &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ad27976189cba62f60b73fd9845c1c208">bifid_cipher_step2</a> (string text, string key)</td></tr>
+<tr class="memdesc:ad27976189cba62f60b73fd9845c1c208"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шаг 2 шифрования Бифида: перестановка координат и разбиение на пары.  <br /></td></tr>
+<tr class="memitem:a6b6c79c89e1f06e87eb6cac5002f27ae" id="r_a6b6c79c89e1f06e87eb6cac5002f27ae"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#a6b6c79c89e1f06e87eb6cac5002f27ae">bifid_cipher_step3</a> (string text, string key)</td></tr>
+<tr class="memdesc:a6b6c79c89e1f06e87eb6cac5002f27ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шаг 3 шифрования Бифида: преобразование пар координат обратно в буквы.  <br /></td></tr>
+<tr class="memitem:a6a7dac9b2d858e7216281a80d70861b0" id="r_a6a7dac9b2d858e7216281a80d70861b0"><td class="memItemLeft">vector&lt; string &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a6a7dac9b2d858e7216281a80d70861b0">bifid_cipher_decoding_step2</a> (string text, string key)</td></tr>
+<tr class="memdesc:a6a7dac9b2d858e7216281a80d70861b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шаг 2 расшифрования Бифида: восстановление исходных пар координат.  <br /></td></tr>
+<tr class="memitem:a08363ba2cfcaa78dd67b3acb93549dd8" id="r_a08363ba2cfcaa78dd67b3acb93549dd8"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#a08363ba2cfcaa78dd67b3acb93549dd8">bifid_cipher_decoding_step3</a> (string text, string key)</td></tr>
+<tr class="memdesc:a08363ba2cfcaa78dd67b3acb93549dd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шаг 3 расшифрования Бифида: преобразование пар координат в буквы.  <br /></td></tr>
+<tr class="memitem:ac4586f6b528123261d2a64a376d8e7e3" id="r_ac4586f6b528123261d2a64a376d8e7e3"><td class="memItemLeft">map&lt; string, vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ac4586f6b528123261d2a64a376d8e7e3">find_repeats</a> (const string &amp;text, int min_len=3)</td></tr>
+<tr class="memdesc:ac4586f6b528123261d2a64a376d8e7e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Находит повторяющиеся подстроки в тексте и расстояния между их вхождениями.  <br /></td></tr>
+<tr class="memitem:a285139a8a9145e6b64212012de1bf7af" id="r_a285139a8a9145e6b64212012de1bf7af"><td class="memItemLeft">vector&lt; int &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a285139a8a9145e6b64212012de1bf7af">get_distances</a> (const map&lt; string, vector&lt; int &gt; &gt; &amp;repeats)</td></tr>
+<tr class="memdesc:a285139a8a9145e6b64212012de1bf7af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Собирает все расстояния между повторами в единый список.  <br /></td></tr>
+<tr class="memitem:abad60aad550cd2fdf05df45f87277136" id="r_abad60aad550cd2fdf05df45f87277136"><td class="memItemLeft">vector&lt; pair&lt; int, int &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#abad60aad550cd2fdf05df45f87277136">guess_key_lengths</a> (const vector&lt; int &gt; &amp;distances, int max_len=20)</td></tr>
+<tr class="memdesc:abad60aad550cd2fdf05df45f87277136"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оценивает вероятные длины ключа по расстояниям между повторами.  <br /></td></tr>
+<tr class="memitem:a49a8504588988c60923609742cc3f5bd" id="r_a49a8504588988c60923609742cc3f5bd"><td class="memItemLeft">vector&lt; string &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a49a8504588988c60923609742cc3f5bd">split_text</a> (const string &amp;text, int key_len)</td></tr>
+<tr class="memdesc:a49a8504588988c60923609742cc3f5bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Разбивает текст на группы по позиции символа относительно длины ключа.  <br /></td></tr>
+<tr class="memitem:a54b79e0f83a9e957979bbd600724fd49" id="r_a54b79e0f83a9e957979bbd600724fd49"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a54b79e0f83a9e957979bbd600724fd49">score_text_6</a> (const string &amp;text)</td></tr>
+<tr class="memdesc:a54b79e0f83a9e957979bbd600724fd49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оценивает похожесть текста на английский по частотам букв.  <br /></td></tr>
+<tr class="memitem:af501ce9f9620948ddb06a1c4a030109b" id="r_af501ce9f9620948ddb06a1c4a030109b"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#af501ce9f9620948ddb06a1c4a030109b">find_shift</a> (const string &amp;group)</td></tr>
+<tr class="memdesc:af501ce9f9620948ddb06a1c4a030109b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Подбирает наилучший сдвиг для одной группы символов.  <br /></td></tr>
+<tr class="memitem:ab14279e3dcbfd674710064bb8393a70d" id="r_ab14279e3dcbfd674710064bb8393a70d"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#ab14279e3dcbfd674710064bb8393a70d">find_key</a> (const vector&lt; string &gt; &amp;groups)</td></tr>
+<tr class="memdesc:ab14279e3dcbfd674710064bb8393a70d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Восстанавливает ключ по группам символов шифртекста.  <br /></td></tr>
+<tr class="memitem:a4a35fff0396f9f446eec864e6957c958" id="r_a4a35fff0396f9f446eec864e6957c958"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4a35fff0396f9f446eec864e6957c958">kasiski_attack</a> (const string &amp;cipher)</td></tr>
+<tr class="memdesc:a4a35fff0396f9f446eec864e6957c958"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выполняет атаку Касиски на шифр Бофора и выводит найденный ключ.  <br /></td></tr>
+<tr class="memitem:a8c09ad144879097b885f3cfc54b4331f" id="r_a8c09ad144879097b885f3cfc54b4331f"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a8c09ad144879097b885f3cfc54b4331f">score_text</a> (const string &amp;text)</td></tr>
+<tr class="memdesc:a8c09ad144879097b885f3cfc54b4331f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оценивает осмысленность текста по сумме весов встречающихся триграмм.  <br /></td></tr>
+<tr class="memitem:a5cf56e47b087c2e979a8b8d2c3bb08b9" id="r_a5cf56e47b087c2e979a8b8d2c3bb08b9"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#a5cf56e47b087c2e979a8b8d2c3bb08b9">decrypt_with_permutation</a> (const string &amp;text, const vector&lt; int &gt; &amp;perm)</td></tr>
+<tr class="memdesc:a5cf56e47b087c2e979a8b8d2c3bb08b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Расшифровывает текст шифра перестановки по столбцам при заданной перестановке.  <br /></td></tr>
+<tr class="memitem:ab19d7fd7212d6cfaa98b1206297d8772" id="r_ab19d7fd7212d6cfaa98b1206297d8772"><td class="memItemLeft"><a class="el" href="struct_brute_force_result.html">BruteForceResult</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab19d7fd7212d6cfaa98b1206297d8772">brute_force</a> (const string &amp;ciphertext, int key_length)</td></tr>
+<tr class="memdesc:ab19d7fd7212d6cfaa98b1206297d8772"><td class="mdescLeft">&#160;</td><td class="mdescRight">Полный перебор всех перестановок столбцов для фиксированной длины ключа.  <br /></td></tr>
+<tr class="memitem:a2c5c1957d00bce1675c229d99ad989fc" id="r_a2c5c1957d00bce1675c229d99ad989fc"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a2c5c1957d00bce1675c229d99ad989fc">crack_with_unknown_key_length</a> (const string &amp;ciphertext, int max_length=8)</td></tr>
+<tr class="memdesc:a2c5c1957d00bce1675c229d99ad989fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Взламывает шифр перестановки по столбцам при неизвестной длине ключа.  <br /></td></tr>
+<tr class="memitem:ac77e07db5192e0c458355a7d39538335" id="r_ac77e07db5192e0c458355a7d39538335"><td class="memItemLeft">vector&lt; vector&lt; char &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ac77e07db5192e0c458355a7d39538335">get_matrix_for_adfgx_cipher</a> ()</td></tr>
+<tr class="memdesc:ac77e07db5192e0c458355a7d39538335"><td class="mdescLeft">&#160;</td><td class="mdescRight">Строит матрицу 6x6 для шифра ADFGX, запрашивая алфавит у пользователя.  <br /></td></tr>
+<tr class="memitem:a130e21d856956ab214fd6abd214c9969" id="r_a130e21d856956ab214fd6abd214c9969"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#a130e21d856956ab214fd6abd214c9969">adfgx_cipher_step1</a> (string text)</td></tr>
+<tr class="memdesc:a130e21d856956ab214fd6abd214c9969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шаг 1 шифра ADFGX: замена каждой буквы парой меток (строка, столбец).  <br /></td></tr>
+<tr class="memitem:af4e68d9a225938c2dcedbe723e781a0b" id="r_af4e68d9a225938c2dcedbe723e781a0b"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#af4e68d9a225938c2dcedbe723e781a0b">adfgx_cipher_step2</a> (string text, string key)</td></tr>
+<tr class="memdesc:af4e68d9a225938c2dcedbe723e781a0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шаг 2 шифрования ADFGX: столбцовая перестановка меток по ключу.  <br /></td></tr>
+<tr class="memitem:a8bf58d76fb9e50bf143fe872e2220d97" id="r_a8bf58d76fb9e50bf143fe872e2220d97"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#a8bf58d76fb9e50bf143fe872e2220d97">adfgx_cipher_decoding_step1</a> (string text, string key)</td></tr>
+<tr class="memdesc:a8bf58d76fb9e50bf143fe872e2220d97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шаг 1 расшифрования ADFGX: отмена столбцовой перестановки меток.  <br /></td></tr>
+<tr class="memitem:a6cc05179ce14c610ea10ce4488590c07" id="r_a6cc05179ce14c610ea10ce4488590c07"><td class="memItemLeft">vector&lt; string &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a6cc05179ce14c610ea10ce4488590c07">adfgx_cipher_decoding_step2</a> (string text, string key)</td></tr>
+<tr class="memdesc:a6cc05179ce14c610ea10ce4488590c07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шаг 2 расшифрования ADFGX: разбиение восстановленных меток на пары.  <br /></td></tr>
+<tr class="memitem:a7cd8b80742a1b7e46588ef889fb90f9e" id="r_a7cd8b80742a1b7e46588ef889fb90f9e"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#a7cd8b80742a1b7e46588ef889fb90f9e">adfgx_cipher_decoding_step3</a> (string text, string key)</td></tr>
+<tr class="memdesc:a7cd8b80742a1b7e46588ef889fb90f9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шаг 3 расшифрования ADFGX: преобразование пар меток в буквы.  <br /></td></tr>
+<tr class="memitem:a49cf117071f2f08154b7b8fabfdf64b8" id="r_a49cf117071f2f08154b7b8fabfdf64b8"><td class="memItemLeft">vector&lt; string &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a49cf117071f2f08154b7b8fabfdf64b8">preparing_text_for_the_playfair_cipher</a> (string text)</td></tr>
+<tr class="memdesc:a49cf117071f2f08154b7b8fabfdf64b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Подготавливает текст к шифрованию Плейфером: разбивка на биграммы.  <br /></td></tr>
+<tr class="memitem:afe369ebaac3c77e3cd17f04d71dfdf99" id="r_afe369ebaac3c77e3cd17f04d71dfdf99"><td class="memItemLeft">vector&lt; vector&lt; char &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#afe369ebaac3c77e3cd17f04d71dfdf99">make_key_matrix</a> (string key)</td></tr>
+<tr class="memdesc:afe369ebaac3c77e3cd17f04d71dfdf99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Строит ключевую матрицу 5x5 для шифра Плейфера.  <br /></td></tr>
+<tr class="memitem:a816485cc827d635c545a29cb7f137a5d" id="r_a816485cc827d635c545a29cb7f137a5d"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#a816485cc827d635c545a29cb7f137a5d">playfair_cipher</a> (string text, string key, string mode=&quot;encrypt&quot;)</td></tr>
+<tr class="memdesc:a816485cc827d635c545a29cb7f137a5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шифрует или расшифровывает текст шифром Плейфера.  <br /></td></tr>
+<tr class="memitem:a7864cf422ac825d7f962462e4fb59967" id="r_a7864cf422ac825d7f962462e4fb59967"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#a7864cf422ac825d7f962462e4fb59967">beauford_cipher</a> (const vector&lt; char &gt; &amp;text, const string &amp;gama, const string &amp;mode=&quot;encrypt&quot;)</td></tr>
+<tr class="memdesc:a7864cf422ac825d7f962462e4fb59967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шифрует или расшифровывает текст шифром Бофора.  <br /></td></tr>
+<tr class="memitem:a4371dee85d35eff82986bfc722784476" id="r_a4371dee85d35eff82986bfc722784476"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#a4371dee85d35eff82986bfc722784476">make_gamma1</a> (const string &amp;key, int len_text)</td></tr>
+<tr class="memdesc:a4371dee85d35eff82986bfc722784476"><td class="mdescLeft">&#160;</td><td class="mdescRight">Формирует гамму нужной длины повторением ключа.  <br /></td></tr>
+<tr class="memitem:a8b066e10177d5f5ed05a21dc4be35c1e" id="r_a8b066e10177d5f5ed05a21dc4be35c1e"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#a8b066e10177d5f5ed05a21dc4be35c1e">Columnar_Transposition_Cipher_e</a> (string &amp;text, const string &amp;key)</td></tr>
+<tr class="memdesc:a8b066e10177d5f5ed05a21dc4be35c1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шифрует текст шифром перестановки по столбцам.  <br /></td></tr>
+<tr class="memitem:a78d9c1d468f2c58cb961a6b83de627b2" id="r_a78d9c1d468f2c58cb961a6b83de627b2"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#a78d9c1d468f2c58cb961a6b83de627b2">Columnar_Transposition_Cipher_d</a> (const string &amp;text, const string &amp;key)</td></tr>
+<tr class="memdesc:a78d9c1d468f2c58cb961a6b83de627b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Расшифровывает текст шифра перестановки по столбцам.  <br /></td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Точка входа программы: интерактивное меню выбора шифра.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:a46d59bb60dca2c736c7a89f6f2a04902" id="r_a46d59bb60dca2c736c7a89f6f2a04902"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#a46d59bb60dca2c736c7a89f6f2a04902">alphabet</a> = &quot;abcdefghijklmnopqrstuvwxyz&quot;</td></tr>
+<tr class="memitem:a0a923163c4d4ac8a2ecbf16f95d21fe2" id="r_a0a923163c4d4ac8a2ecbf16f95d21fe2"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a0a923163c4d4ac8a2ecbf16f95d21fe2">power</a> = alphabet.length()</td></tr>
+<tr class="memitem:a830adedb3b4cc6a6074e1e071beae1b6" id="r_a830adedb3b4cc6a6074e1e071beae1b6"><td class="memItemLeft">map&lt; char, double &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a830adedb3b4cc6a6074e1e071beae1b6">ENG_FREQS</a></td></tr>
+<tr class="memitem:a1512c0d3fc47410d109c2605fba95733" id="r_a1512c0d3fc47410d109c2605fba95733"><td class="memItemLeft">map&lt; string, double &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a1512c0d3fc47410d109c2605fba95733">ENGLISH_TRIGRAMS</a></td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Функции</h2>
+<a id="a8bf58d76fb9e50bf143fe872e2220d97" name="a8bf58d76fb9e50bf143fe872e2220d97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bf58d76fb9e50bf143fe872e2220d97">&#9670;&#160;</a></span>adfgx_cipher_decoding_step1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string adfgx_cipher_decoding_step1 </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>key</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Шаг 1 расшифрования ADFGX: отмена столбцовой перестановки меток. </p>
+<p>По ключу восстанавливаются длины столбцов, шифртекст распределяется обратно по столбцам в порядке сортировки ключа и считывается построчно, восстанавливая исходную последовательность меток ADFGX.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>Шифртекст в метках ADFGX. </td></tr>
+    <tr><td class="paramname">key</td><td>Ключевое слово, использованное при шифровании. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Строка меток ADFGX в порядке до перестановки. </dd></dl>
+
+</div>
+</div>
+<a id="a6cc05179ce14c610ea10ce4488590c07" name="a6cc05179ce14c610ea10ce4488590c07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cc05179ce14c610ea10ce4488590c07">&#9670;&#160;</a></span>adfgx_cipher_decoding_step2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; string &gt; adfgx_cipher_decoding_step2 </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>key</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Шаг 2 расшифрования ADFGX: разбиение восстановленных меток на пары. </p>
+<p>Последовательность меток из <a class="el" href="#a8bf58d76fb9e50bf143fe872e2220d97" title="adfgx_cipher_decoding_step1">adfgx_cipher_decoding_step1</a> делится на пары, каждая из которых задаёт координаты одной буквы в матрице ADFGX.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>Шифртекст в метках ADFGX. </td></tr>
+    <tr><td class="paramname">key</td><td>Ключевое слово, использованное при шифровании. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Вектор строк-пар меток. </dd></dl>
+
+</div>
+</div>
+<a id="a7cd8b80742a1b7e46588ef889fb90f9e" name="a7cd8b80742a1b7e46588ef889fb90f9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cd8b80742a1b7e46588ef889fb90f9e">&#9670;&#160;</a></span>adfgx_cipher_decoding_step3()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string adfgx_cipher_decoding_step3 </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>key</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Шаг 3 расшифрования ADFGX: преобразование пар меток в буквы. </p>
+<p>Для каждой пары меток первая определяет строку, вторая - столбец матрицы ADFGX, и из соответствующей ячейки извлекается исходная буква.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>Шифртекст в метках ADFGX. </td></tr>
+    <tr><td class="paramname">key</td><td>Ключевое слово, использованное при шифровании. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Расшифрованный текст. </dd></dl>
+
+</div>
+</div>
+<a id="a130e21d856956ab214fd6abd214c9969" name="a130e21d856956ab214fd6abd214c9969"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a130e21d856956ab214fd6abd214c9969">&#9670;&#160;</a></span>adfgx_cipher_step1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string adfgx_cipher_step1 </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>text</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Шаг 1 шифра ADFGX: замена каждой буквы парой меток (строка, столбец). </p>
+<p>Для каждого символа находится его позиция в матрице ADFGX, и он заменяется парой буквенных меток (метка строки и метка столбца). Перед обработкой 'j' заменяется на 'i'.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>Исходный текст для преобразования. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Строка из меток ADFGX. </dd></dl>
+
+</div>
+</div>
+<a id="af4e68d9a225938c2dcedbe723e781a0b" name="af4e68d9a225938c2dcedbe723e781a0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4e68d9a225938c2dcedbe723e781a0b">&#9670;&#160;</a></span>adfgx_cipher_step2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string adfgx_cipher_step2 </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>key</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Шаг 2 шифрования ADFGX: столбцовая перестановка меток по ключу. </p>
+<p>Строка меток из <a class="el" href="#a130e21d856956ab214fd6abd214c9969" title="adfgx_cipher_step1">adfgx_cipher_step1</a> разбивается на строки длиной с ключ, столбцы сортируются по алфавитному порядку символов ключа и считываются по столбцам, образуя итоговый шифртекст.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>Исходный текст для шифрования. </td></tr>
+    <tr><td class="paramname">key</td><td>Ключевое слово, задающее порядок перестановки столбцов. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Зашифрованный текст в метках ADFGX. </dd></dl>
+
+</div>
+</div>
+<a id="a7864cf422ac825d7f962462e4fb59967" name="a7864cf422ac825d7f962462e4fb59967"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7864cf422ac825d7f962462e4fb59967">&#9670;&#160;</a></span>beauford_cipher()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string beauford_cipher </td>
+          <td>(</td>
+          <td class="paramtype">const vector&lt; char &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>gama</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>mode</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;encrypt&quot;</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Шифрует или расшифровывает текст шифром Бофора. </p>
+<p>Применяет формулу Бофора посимвольно: результат = (гамма - текст) mod power. Шифрование и расшифрование выполняются одинаково.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>Исходный текст в виде вектора символов. </td></tr>
+    <tr><td class="paramname">gama</td><td>Гамма, не короче текста. </td></tr>
+    <tr><td class="paramname">mode</td><td>Режим работы: "encrypt" или "decrypt". </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Результат преобразования (строка). </dd></dl>
+
+</div>
+</div>
+<a id="a6a7dac9b2d858e7216281a80d70861b0" name="a6a7dac9b2d858e7216281a80d70861b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a7dac9b2d858e7216281a80d70861b0">&#9670;&#160;</a></span>bifid_cipher_decoding_step2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; string &gt; bifid_cipher_decoding_step2 </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>key</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Шаг 2 расшифрования Бифида: восстановление исходных пар координат. </p>
+<p>Координаты шифртекста (полученные шагом 1) выписываются в один ряд, затем ряд делится пополам: первая половина - метки строк, вторая - метки столбцов. Соответствующие элементы половин объединяются обратно в пары координат каждого символа.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>Шифрованный текст для расшифрования. </td></tr>
+    <tr><td class="paramname">key</td><td>Ключевое слово для построения матрицы Бифида. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Вектор строк, каждая из которых - пара цифр-координат одного исходного символа. </dd></dl>
+
+</div>
+</div>
+<a id="a08363ba2cfcaa78dd67b3acb93549dd8" name="a08363ba2cfcaa78dd67b3acb93549dd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08363ba2cfcaa78dd67b3acb93549dd8">&#9670;&#160;</a></span>bifid_cipher_decoding_step3()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string bifid_cipher_decoding_step3 </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>key</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Шаг 3 расшифрования Бифида: преобразование пар координат в буквы. </p>
+<p>Каждая восстановленная пара цифр интерпретируется как координаты (строка, столбец) в матрице Бифида, и из неё извлекается исходная буква открытого текста.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>Шифрованный текст для расшифрования. </td></tr>
+    <tr><td class="paramname">key</td><td>Ключевое слово для построения матрицы Бифида. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Расшифрованный текст. </dd></dl>
+
+</div>
+</div>
+<a id="a1497fbbdb70e71e7f358408204ae0c9c" name="a1497fbbdb70e71e7f358408204ae0c9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1497fbbdb70e71e7f358408204ae0c9c">&#9670;&#160;</a></span>bifid_cipher_step1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; vector&lt; char &gt; &gt; bifid_cipher_step1 </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>key</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Шаг 1 шифра Бифида: замена каждого символа текста парой его координат в матрице. </p>
+<p>Для каждого символа находится его позиция в матрице (полученной из ключа), и символ заменяется парой меток: метка строки и метка столбца. Перед обработкой буква 'j' заменяется на 'i'.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>Исходный текст, состоящий из букв. </td></tr>
+    <tr><td class="paramname">key</td><td>Ключевое слово для построения матрицы Бифида. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Вектор пар координат: для каждого символа — вектор из двух символов {метка_строки, метка_столбца}. </dd></dl>
+
+</div>
+</div>
+<a id="ad27976189cba62f60b73fd9845c1c208" name="ad27976189cba62f60b73fd9845c1c208"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad27976189cba62f60b73fd9845c1c208">&#9670;&#160;</a></span>bifid_cipher_step2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; string &gt; bifid_cipher_step2 </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>key</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Шаг 2 шифрования Бифида: перестановка координат и разбиение на пары. </p>
+<p>Координаты, полученные на шаге 1, переписываются по строкам: сначала подряд все метки строк, затем все метки столбцов. Получившаяся последовательность цифр разбивается на пары.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>Исходный текст для шифрования. </td></tr>
+    <tr><td class="paramname">key</td><td>Ключевое слово для построения матрицы Бифида. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Вектор строк, каждая из которых - это пара цифр-координат. </dd></dl>
+
+</div>
+</div>
+<a id="a6b6c79c89e1f06e87eb6cac5002f27ae" name="a6b6c79c89e1f06e87eb6cac5002f27ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b6c79c89e1f06e87eb6cac5002f27ae">&#9670;&#160;</a></span>bifid_cipher_step3()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string bifid_cipher_step3 </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>key</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Шаг 3 шифрования Бифида: преобразование пар координат обратно в буквы. </p>
+<p>Каждая пара цифр интерпретируется как координаты (строка, столбец) в матрице, и из неё извлекается соответствующая буква - это и есть итоговый шифртекст.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>Исходный текст для шифрования. </td></tr>
+    <tr><td class="paramname">key</td><td>Ключевое слово для построения матрицы Бифида. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Зашифрованный текст. </dd></dl>
+
+</div>
+</div>
+<a id="ab19d7fd7212d6cfaa98b1206297d8772" name="ab19d7fd7212d6cfaa98b1206297d8772"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab19d7fd7212d6cfaa98b1206297d8772">&#9670;&#160;</a></span>brute_force()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_brute_force_result.html">BruteForceResult</a> brute_force </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>ciphertext</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>key_length</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Полный перебор всех перестановок столбцов для фиксированной длины ключа. </p>
+<p>Перебирает все перестановки длины key_length, для каждой расшифровывает текст <a class="el" href="#a5cf56e47b087c2e979a8b8d2c3bb08b9" title="decrypt_with_permutation">decrypt_with_permutation</a> и оценивает его <a class="el" href="#a8c09ad144879097b885f3cfc54b4331f" title="score_text">score_text</a>, запоминая лучший вариант.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ciphertext</td><td>Шифртекст для взлома. </td></tr>
+    <tr><td class="paramname">key_length</td><td>Предполагаемая длина ключа (число столбцов). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Структура <a class="el" href="struct_brute_force_result.html" title="BruteForceResult">BruteForceResult</a> с лучшим текстом, его перестановкой и оценкой. </dd></dl>
+
+</div>
+</div>
+<a id="a78d9c1d468f2c58cb961a6b83de627b2" name="a78d9c1d468f2c58cb961a6b83de627b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78d9c1d468f2c58cb961a6b83de627b2">&#9670;&#160;</a></span>Columnar_Transposition_Cipher_d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Columnar_Transposition_Cipher_d </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Расшифровывает текст шифра перестановки по столбцам. </p>
+<p>По ключу восстанавливаются длины столбцов, шифртекст распределяется по столбцам в порядке сортировки ключа и считывается построчно, восстанавливая открытый текст.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>Шифртекст для расшифрования. </td></tr>
+    <tr><td class="paramname">key</td><td>Ключевое слово, использованное при шифровании. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Расшифрованный текст. </dd></dl>
+
+</div>
+</div>
+<a id="a8b066e10177d5f5ed05a21dc4be35c1e" name="a8b066e10177d5f5ed05a21dc4be35c1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b066e10177d5f5ed05a21dc4be35c1e">&#9670;&#160;</a></span>Columnar_Transposition_Cipher_e()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Columnar_Transposition_Cipher_e </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Шифрует текст шифром перестановки по столбцам. </p>
+<p>Текст записывается в таблицу построчно (ширина равна длине ключа), столбцы упорядочиваются по алфавитному порядку символов ключа и считываются по столбцам, образуя шифртекст.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>Исходный текст для шифрования. </td></tr>
+    <tr><td class="paramname">key</td><td>Ключевое слово, задающее порядок столбцов. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Зашифрованный текст. </dd></dl>
+
+</div>
+</div>
+<a id="a2c5c1957d00bce1675c229d99ad989fc" name="a2c5c1957d00bce1675c229d99ad989fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c5c1957d00bce1675c229d99ad989fc">&#9670;&#160;</a></span>crack_with_unknown_key_length()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int crack_with_unknown_key_length </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>ciphertext</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>max_length</em></span><span class="paramdefsep"> = </span><span class="paramdefval">8</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Взламывает шифр перестановки по столбцам при неизвестной длине ключа. </p>
+<p>Перебирает длины ключа от 2 до max_length, для каждой выполняет полный перебор <a class="el" href="#ab19d7fd7212d6cfaa98b1206297d8772" title="brute_force">brute_force</a> и выбирает вариант с наибольшей оценкой. Найденная длина ключа, порядок столбцов и расшифрованный текст выводятся на экран.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ciphertext</td><td>Шифртекст для взлома. </td></tr>
+    <tr><td class="paramname">max_length</td><td>Максимальная длина ключа. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Всегда возвращает 0; результат выводится на экран. </dd></dl>
+
+</div>
+</div>
+<a id="a5cf56e47b087c2e979a8b8d2c3bb08b9" name="a5cf56e47b087c2e979a8b8d2c3bb08b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cf56e47b087c2e979a8b8d2c3bb08b9">&#9670;&#160;</a></span>decrypt_with_permutation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string decrypt_with_permutation </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const vector&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>perm</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Расшифровывает текст шифра перестановки по столбцам при заданной перестановке. </p>
+<p>Восстанавливает длины столбцов, распределяет символы шифртекста по столбцам согласно перестановке и считывает их построчно, получая открытый текст.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>Шифртекст для расшифрования. </td></tr>
+    <tr><td class="paramname">perm</td><td>Перестановка столбцов (порядок, в котором столбцы были выписаны при шифровании). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Расшифрованный текст. </dd></dl>
+
+</div>
+</div>
+<a id="ab14279e3dcbfd674710064bb8393a70d" name="ab14279e3dcbfd674710064bb8393a70d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab14279e3dcbfd674710064bb8393a70d">&#9670;&#160;</a></span>find_key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string find_key </td>
+          <td>(</td>
+          <td class="paramtype">const vector&lt; string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>groups</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Восстанавливает ключ по группам символов шифртекста. </p>
+<p>Для каждой группы определяется наилучший сдвиг через <a class="el" href="#af501ce9f9620948ddb06a1c4a030109b" title="find_shift">find_shift</a>, который переводится в соответствующую букву ключа.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">groups</td><td>Группы символов, полученные функцией <a class="el" href="#a49a8504588988c60923609742cc3f5bd" title="split_text">split_text</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Восстановленная строка-ключ. </dd></dl>
+
+</div>
+</div>
+<a id="ac4586f6b528123261d2a64a376d8e7e3" name="ac4586f6b528123261d2a64a376d8e7e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4586f6b528123261d2a64a376d8e7e3">&#9670;&#160;</a></span>find_repeats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">map&lt; string, vector&lt; int &gt; &gt; find_repeats </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>min_len</em></span><span class="paramdefsep"> = </span><span class="paramdefval">3</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Находит повторяющиеся подстроки в тексте и расстояния между их вхождениями. </p>
+<p>Для каждой подстроки фиксированной длины ищутся её повторные вхождения, и для каждой найденной пары вхождений сохраняется расстояние.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>Анализируемый шифртекст. </td></tr>
+    <tr><td class="paramname">min_len</td><td>Длина искомых подстрок. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Отображение {подстрока: список расстояний между её вхождениями}. </dd></dl>
+
+</div>
+</div>
+<a id="af501ce9f9620948ddb06a1c4a030109b" name="af501ce9f9620948ddb06a1c4a030109b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af501ce9f9620948ddb06a1c4a030109b">&#9670;&#160;</a></span>find_shift()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int find_shift </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>group</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Подбирает наилучший сдвиг для одной группы символов. </p>
+<p>Перебирает все 26 возможных сдвигов, расшифровывает группу по формуле шифра Бофора и выбирает сдвиг, дающий наименьшую оценку <a class="el" href="#a54b79e0f83a9e957979bbd600724fd49" title="score_text_6">score_text_6</a>.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">group</td><td>Группа символов, зашифрованных одним символом ключа. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Индекс наилучшего сдвига (0..25). </dd></dl>
+
+</div>
+</div>
+<a id="a285139a8a9145e6b64212012de1bf7af" name="a285139a8a9145e6b64212012de1bf7af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a285139a8a9145e6b64212012de1bf7af">&#9670;&#160;</a></span>get_distances()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; int &gt; get_distances </td>
+          <td>(</td>
+          <td class="paramtype">const map&lt; string, vector&lt; int &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>repeats</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Собирает все расстояния между повторами в единый список. </p>
+<p>Объединяет значения из всех записей отображения, полученного функцией <a class="el" href="#ac4586f6b528123261d2a64a376d8e7e3" title="find_repeats">find_repeats</a>.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">repeats</td><td>Отображение {подстрока: список расстояний между её вхождениями}. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Плоский вектор всех расстояний между повторяющимися подстроками. </dd></dl>
+
+</div>
+</div>
+<a id="ac77e07db5192e0c458355a7d39538335" name="ac77e07db5192e0c458355a7d39538335"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac77e07db5192e0c458355a7d39538335">&#9670;&#160;</a></span>get_matrix_for_adfgx_cipher()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; vector&lt; char &gt; &gt; get_matrix_for_adfgx_cipher </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Строит матрицу 6x6 для шифра ADFGX, запрашивая алфавит у пользователя. </p>
+<p>В нулевой строке и нулевом столбце располагаются буквы 'a','d','f','g','x'. Ячейки [1...5][1...5] заполняются алфавитом: при вводе "1" используется стандартный латинский алфавит без 'j', иначе — введённая пользователем строка. Ввод читается со стандартного потока ввода внутри функции.</p>
+<dl class="section return"><dt>Возвращает</dt><dd>Матрица 6x6 (vector&lt;vector&lt;char&gt;&gt;): строка 0 и столбец 0 — метки ADFGX, ячейки [1...5][1...5] — буквы алфавита. </dd></dl>
+
+</div>
+</div>
+<a id="a0c4eaf894b5d85ae547c79e142cc3d5b" name="a0c4eaf894b5d85ae547c79e142cc3d5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c4eaf894b5d85ae547c79e142cc3d5b">&#9670;&#160;</a></span>get_matrix_for_bifid_cipher()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; vector&lt; char &gt; &gt; get_matrix_for_bifid_cipher </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Строит координатную матрицу 6x6 (полибианский квадрат) для шифра Бифида. </p>
+<p>В нулевой строке и нулевом столбце матрицы располагаются цифры-метки '1'..'5', а остальные ячейки (с 1-й по 5-ю строку и столбец) заполняются буквами: сначала уникальными буквами ключа, затем недостающими буквами алфавита. Буква 'j' исключается из алфавита.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>Ключевое слово, задающее порядок заполнения матрицы буквами. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Матрица 6x6 (vector&lt;vector&lt;char&gt;&gt;): строка 0 и столбец 0 — цифры '1'..'5', ячейки [1..5][1..5] — буквы алфавита без 'j'. </dd></dl>
+
+</div>
+</div>
+<a id="abad60aad550cd2fdf05df45f87277136" name="abad60aad550cd2fdf05df45f87277136"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abad60aad550cd2fdf05df45f87277136">&#9670;&#160;</a></span>guess_key_lengths()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; pair&lt; int, int &gt; &gt; guess_key_lengths </td>
+          <td>(</td>
+          <td class="paramtype">const vector&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>distances</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>max_len</em></span><span class="paramdefsep"> = </span><span class="paramdefval">20</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Оценивает вероятные длины ключа по расстояниям между повторами. </p>
+<p>Для каждого расстояния подсчитывается, на какие длины оно делится без остатка; чем чаще длина является делителем, тем она вероятнее. Результат сортируется по убыванию частоты.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">distances</td><td>Список расстояний между повторами из <a class="el" href="#a285139a8a9145e6b64212012de1bf7af" title="get_distances">get_distances</a>. </td></tr>
+    <tr><td class="paramname">max_len</td><td>Верхняя граница проверяемых длин ключа. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Вектор пар {длина_ключа, число_подходящих_расстояний}, отсортированный по убыванию частоты. </dd></dl>
+
+</div>
+</div>
+<a id="a4a35fff0396f9f446eec864e6957c958" name="a4a35fff0396f9f446eec864e6957c958"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a35fff0396f9f446eec864e6957c958">&#9670;&#160;</a></span>kasiski_attack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void kasiski_attack </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>cipher</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выполняет атаку Касиски на шифр Бофора и выводит найденный ключ. </p>
+<p>Последовательно находит повторы <a class="el" href="#ac4586f6b528123261d2a64a376d8e7e3" title="find_repeats">find_repeats</a>, извлекает расстояния <a class="el" href="#a285139a8a9145e6b64212012de1bf7af" title="get_distances">get_distances</a>, оценивает вероятную длину ключа <a class="el" href="#abad60aad550cd2fdf05df45f87277136" title="guess_key_lengths">guess_key_lengths</a>, разбивает текст на группы <a class="el" href="#a49a8504588988c60923609742cc3f5bd" title="split_text">split_text</a> и восстанавливает ключ <a class="el" href="#ab14279e3dcbfd674710064bb8393a70d" title="find_key">find_key</a>. Результат печатается в стандартный поток вывода.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cipher</td><td>Анализируемый шифртекст. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Функция ничего не возвращает; результат выводится на экран. </dd></dl>
+
+</div>
+</div>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Точка входа программы: интерактивное меню выбора шифра. </p>
+<p>Настраивает кодировку консоли на UTF-8 и в цикле предлагает пользователю выбрать операцию: шифрование/расшифрование одним из шифров (перестановка по столбцам, Бофор, Плейфер, ADFGX, Бифид) с чтением исходного текста из файла и записью результата в файл, либо криптоанализ (перестановки по столбцам или Бофора). Цикл завершается при вводе "0".</p>
+<dl class="section return"><dt>Возвращает</dt><dd>0. </dd></dl>
+
+</div>
+</div>
+<a id="a4371dee85d35eff82986bfc722784476" name="a4371dee85d35eff82986bfc722784476"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4371dee85d35eff82986bfc722784476">&#9670;&#160;</a></span>make_gamma1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string make_gamma1 </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>len_text</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Формирует гамму нужной длины повторением ключа. </p>
+<p>Многократно дописывает ключ, пока длина строки не достигнет требуемой.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>Ключевое слово. </td></tr>
+    <tr><td class="paramname">len_text</td><td>Минимально необходимая длина гаммы. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Гамма, образованная повторением ключа, длиной не меньше len_text. </dd></dl>
+
+</div>
+</div>
+<a id="afe369ebaac3c77e3cd17f04d71dfdf99" name="afe369ebaac3c77e3cd17f04d71dfdf99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe369ebaac3c77e3cd17f04d71dfdf99">&#9670;&#160;</a></span>make_key_matrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; vector&lt; char &gt; &gt; make_key_matrix </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Строит ключевую матрицу 5x5 для шифра Плейфера. </p>
+<p>Сначала в матрицу заносятся уникальные буквы ключа без 'j' и повторяющихся букв, затем недостающие буквы алфавита, также без 'j', последовательно заполняя строки.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>Ключевое слово. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Матрица 5x5 (vector&lt;vector&lt;char&gt;&gt;) букв алфавита без 'j' и повторов. </dd></dl>
+
+</div>
+</div>
+<a id="a816485cc827d635c545a29cb7f137a5d" name="a816485cc827d635c545a29cb7f137a5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a816485cc827d635c545a29cb7f137a5d">&#9670;&#160;</a></span>playfair_cipher()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string playfair_cipher </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>key</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>mode</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;encrypt&quot;</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Шифрует или расшифровывает текст шифром Плейфера. </p>
+<p>Строит ключевую матрицу <a class="el" href="#afe369ebaac3c77e3cd17f04d71dfdf99" title="make_key_matrix">make_key_matrix</a>, разбивает текст на биграммы <a class="el" href="#a49cf117071f2f08154b7b8fabfdf64b8" title="preparing_text_for_the_playfair_cipher">preparing_text_for_the_playfair_cipher</a> и для каждой пары применяет правила Плейфера (одна строка / один столбец / прямоугольник) в зависимости от режима.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>Исходный текст для обработки. </td></tr>
+    <tr><td class="paramname">key</td><td>Ключевое слово для построения матрицы. </td></tr>
+    <tr><td class="paramname">mode</td><td>Режим работы: "encrypt" — шифрование, "decrypt" — расшифрование. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Результат шифрования или расшифрования. </dd></dl>
+
+</div>
+</div>
+<a id="a49cf117071f2f08154b7b8fabfdf64b8" name="a49cf117071f2f08154b7b8fabfdf64b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49cf117071f2f08154b7b8fabfdf64b8">&#9670;&#160;</a></span>preparing_text_for_the_playfair_cipher()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; string &gt; preparing_text_for_the_playfair_cipher </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>text</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Подготавливает текст к шифрованию Плейфером: разбивка на биграммы. </p>
+<p>Заменяет 'j' на 'i', затем разбивает текст на пары букв. Если в паре две одинаковые буквы или текст имеет нечётную длину, в пару добавляется буква-заполнитель 'x'.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>Исходный текст для подготовки. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Вектор биграмм (строк по 2 символа), готовых к шифрованию. </dd></dl>
+
+</div>
+</div>
+<a id="a8c09ad144879097b885f3cfc54b4331f" name="a8c09ad144879097b885f3cfc54b4331f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c09ad144879097b885f3cfc54b4331f">&#9670;&#160;</a></span>score_text()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double score_text </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Оценивает осмысленность текста по сумме весов встречающихся триграмм. </p>
+<p>Для каждой триграммы текста, присутствующей в таблице ENGLISH_TRIGRAMS, к итоговой оценке добавляется её вес. Чем выше значение, тем больше он соответствует правильному английскому тексту.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>Текст для оценки. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Суммарный вес найденных триграмм. </dd></dl>
+
+</div>
+</div>
+<a id="a54b79e0f83a9e957979bbd600724fd49" name="a54b79e0f83a9e957979bbd600724fd49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54b79e0f83a9e957979bbd600724fd49">&#9670;&#160;</a></span>score_text_6()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double score_text_6 </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Оценивает похожесть текста на английский по частотам букв. </p>
+<p>Подсчитывает фактическую частоту каждой буквы в тексте и суммирует абсолютные отклонения от эталонных частот <a class="el" href="#a830adedb3b4cc6a6074e1e071beae1b6" title="ENG_FREQS">ENG_FREQS</a>. Чем меньше итоговое значение, тем ближе распределение букв к английскому языку.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>Текст для оценки. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Суммарное отклонение частот. </dd></dl>
+
+</div>
+</div>
+<a id="a49a8504588988c60923609742cc3f5bd" name="a49a8504588988c60923609742cc3f5bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49a8504588988c60923609742cc3f5bd">&#9670;&#160;</a></span>split_text()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; string &gt; split_text </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>key_len</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Разбивает текст на группы по позиции символа относительно длины ключа. </p>
+<p>Символ с индексом i попадает в группу i % key_len. В итоге каждая группа содержит символы, зашифрованные одним и тем же символом ключа.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>Анализируемый шифртекст. </td></tr>
+    <tr><td class="paramname">key_len</td><td>Предполагаемая длина ключа (число групп). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Вектор из key_len строк-групп. </dd></dl>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Переменные</h2>
+<a id="a46d59bb60dca2c736c7a89f6f2a04902" name="a46d59bb60dca2c736c7a89f6f2a04902"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46d59bb60dca2c736c7a89f6f2a04902">&#9670;&#160;</a></span>alphabet</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string alphabet = &quot;abcdefghijklmnopqrstuvwxyz&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a830adedb3b4cc6a6074e1e071beae1b6" name="a830adedb3b4cc6a6074e1e071beae1b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a830adedb3b4cc6a6074e1e071beae1b6">&#9670;&#160;</a></span>ENG_FREQS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">map&lt;char, double&gt; ENG_FREQS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Инициализатор</b><div class="fragment"><div class="line">          = {</div>
+<div class="line">{<span class="charliteral">&#39;a&#39;</span>, 8.17}, {<span class="charliteral">&#39;b&#39;</span>, 1.49}, {<span class="charliteral">&#39;c&#39;</span>, 2.78}, {<span class="charliteral">&#39;d&#39;</span>, 4.25}, {<span class="charliteral">&#39;e&#39;</span>, 12.70},</div>
+<div class="line">{<span class="charliteral">&#39;f&#39;</span>, 2.23}, {<span class="charliteral">&#39;g&#39;</span>, 2.02}, {<span class="charliteral">&#39;h&#39;</span>, 6.09}, {<span class="charliteral">&#39;i&#39;</span>, 6.97}, {<span class="charliteral">&#39;j&#39;</span>, 0.15},</div>
+<div class="line">{<span class="charliteral">&#39;k&#39;</span>, 0.77}, {<span class="charliteral">&#39;l&#39;</span>, 4.03}, {<span class="charliteral">&#39;m&#39;</span>, 2.41}, {<span class="charliteral">&#39;n&#39;</span>, 6.75}, {<span class="charliteral">&#39;o&#39;</span>, 7.51},</div>
+<div class="line">{<span class="charliteral">&#39;p&#39;</span>, 1.93}, {<span class="charliteral">&#39;q&#39;</span>, 0.10}, {<span class="charliteral">&#39;r&#39;</span>, 5.99}, {<span class="charliteral">&#39;s&#39;</span>, 6.33}, {<span class="charliteral">&#39;t&#39;</span>, 9.06},</div>
+<div class="line">{<span class="charliteral">&#39;u&#39;</span>, 2.76}, {<span class="charliteral">&#39;v&#39;</span>, 0.98}, {<span class="charliteral">&#39;w&#39;</span>, 2.36}, {<span class="charliteral">&#39;x&#39;</span>, 0.15}, {<span class="charliteral">&#39;y&#39;</span>, 1.97},</div>
+<div class="line">{<span class="charliteral">&#39;z&#39;</span>, 0.07}}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1512c0d3fc47410d109c2605fba95733" name="a1512c0d3fc47410d109c2605fba95733"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1512c0d3fc47410d109c2605fba95733">&#9670;&#160;</a></span>ENGLISH_TRIGRAMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">map&lt;string, double&gt; ENGLISH_TRIGRAMS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Инициализатор</b><div class="fragment"><div class="line">                 = {</div>
+<div class="line">{<span class="stringliteral">&quot;the&quot;</span>, 10.0}, {<span class="stringliteral">&quot;and&quot;</span>, 9.0}, {<span class="stringliteral">&quot;ing&quot;</span>, 8.0}, {<span class="stringliteral">&quot;ent&quot;</span>, 7.0}, {<span class="stringliteral">&quot;ion&quot;</span>, 6.5},</div>
+<div class="line">{<span class="stringliteral">&quot;her&quot;</span>, 6.0},  {<span class="stringliteral">&quot;for&quot;</span>, 5.5}, {<span class="stringliteral">&quot;tha&quot;</span>, 5.0}, {<span class="stringliteral">&quot;nth&quot;</span>, 4.5}, {<span class="stringliteral">&quot;int&quot;</span>, 4.0},</div>
+<div class="line">{<span class="stringliteral">&quot;ere&quot;</span>, 3.5},  {<span class="stringliteral">&quot;tth&quot;</span>, 3.0}, {<span class="stringliteral">&quot;pro&quot;</span>, 2.5}, {<span class="stringliteral">&quot;con&quot;</span>, 2.0}, {<span class="stringliteral">&quot;ter&quot;</span>, 1.5},</div>
+<div class="line">{<span class="stringliteral">&quot;ati&quot;</span>, 1.0},  {<span class="stringliteral">&quot;hat&quot;</span>, 1.0}, {<span class="stringliteral">&quot;all&quot;</span>, 1.0}, {<span class="stringliteral">&quot;eth&quot;</span>, 1.0}, {<span class="stringliteral">&quot;hes&quot;</span>, 1.0}}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0a923163c4d4ac8a2ecbf16f95d21fe2" name="a0a923163c4d4ac8a2ecbf16f95d21fe2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a923163c4d4ac8a2ecbf16f95d21fe2">&#9670;&#160;</a></span>power</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int power = alphabet.length()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="main_8cpp.html">main.cpp</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>
