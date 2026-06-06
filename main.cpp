@@ -358,6 +358,8 @@ vector<string> split_text(const string &text, int key_len) {
   return groups;
 }
 
+// Начало заимствования
+
 /**
  * @brief Оценивает похожесть текста на английский по частотам букв.
  *
@@ -392,6 +394,8 @@ double score_text_6(const string &text) {
 
   return score;
 }
+
+// Конец заимствования
 
 /**
  * @brief Подбирает наилучший сдвиг для одной группы символов.
